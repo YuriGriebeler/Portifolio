@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Profissional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            position: relative;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: #0ff;
+            text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+        }
+        .photo {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #0ff;
+            box-shadow: 0 0 15px #0ff;
+        }
+        .summary {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .tag {
+            background-color: #ff6347;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ff6347;
+        }
+        .projects {
+            margin-top: 30px;
+        }
+        .project {
+            margin-bottom: 20px;
+        }
+        .project h3 {
+            color: #0ff;
+            text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+        }
+        .project a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .meteor-shower {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .meteor {
+            position: absolute;
+            top: 0px;
+            width: 4px;
+            height: 4px;
+            background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0));
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) translateX(100vw) rotate(45deg);
+            }
+        }
+        .meteor:nth-child(1) {
+            left: 10%;
+            animation-duration: 3s;
+            animation-delay: 0s;
+        }
+        .meteor:nth-child(2) {
+            left: 30%;
+            animation-duration: 5s;
+            animation-delay: 2s;
+        }
+        .meteor:nth-child(3) {
+            left: 50%;
+            animation-duration: 6s;
+            animation-delay: 4s;
+        }
+        .meteor:nth-child(4) {
+            left: 70%;
+            animation-duration: 5s;
+            animation-delay: 1s;
+        }
+        .meteor:nth-child(5) {
+            left: 90%;
+            animation-duration: 9s;
+            animation-delay: 3s;
+        }
+        .meteor:nth-child(6) {
+            left: 110%;
+            animation-duration: 5s;
+            animation-delay: 2s;
+        }
+        .meteor:nth-child(7) {
+            left: 130%;
+            animation-duration: 7s;
+            animation-delay: 4s;
+        }
+        .meteor:nth-child(8) {
+            left: 150%;
+            animation-duration: 5s;
+            animation-delay: 1s;
+        }
+        .meteor:nth-child(9) {
+            left: 190%;
+            animation-duration: 10s;
+            animation-delay: 3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Meu Portfólio Profissional</h1>
+        </header>
+        <div class="photo">
+            <img src="profile.png" alt="Minha Foto">
+        </div>
+        <section class="summary">
+            <p>Sou um desenvolvedor Full Stack apaixonado por tecnologia e inovação. Tenho experiência em diversas linguagens de programação e frameworks. Meu objetivo é criar soluções eficientes e inovadoras para problemas complexos.</p>
+        </section>
+        <section class="tags">
+            <div class="tag">Java</div>
+            <div class="tag">C#</div>
+            <div class="tag">HTML5</div>
+            <div class="tag">MySQL</div>
+            <div class="tag">Angular</div>
+        </section>
+        <section class="projects">
+            <h2>Projetos</h2>
+            <div class="project">
+                <h3>Abastecimento de estoque</h3>
+                <p>Backend de projeto Java com CRUD para abastecimento e acompanhamento de estoque.</p>
+                <a href="https://github.com/seuusuario/projeto1" target="_blank"><i class="fab fa-github"></i> Ver no GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Projeto 2</h3>
+                <p>Descrição breve do projeto.</p>
+                <a href="https://github.com/seuusuario/projeto2" target="_blank"><i class="fab fa-github"></i> Ver no GitHub</a>
+            </div>
+            <!-- Adicione mais projetos conforme necessário -->
+        </section>
+        <footer>
+        </footer>
+    </div>
+    <div class="meteor-shower">
+        <div class="meteor"></div>
+        <div class="meteor"></div>
+        <div class="meteor"></div>
+        <div class="meteor"></div>
+        <div class="meteor"></div>
+        <div class="meteor"></div>
+        <div class="meteor"></div>
+        <div class="meteor"></div>
+        <div class="meteor"></div>
+    </div>
+</body>
+</html>
